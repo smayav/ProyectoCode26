@@ -4,3 +4,20 @@ h1{
     color: #f4fffd;
     
 }
+.navbar-nav{
+font-size: 80;
+}
+
+.navbar-navbar-expand-lg  {
+    color:green;
+    font-family: 'Roboto', sans-serif ;
+    font-size: 80;
+    background-color: #011936;
+}
+.card-title{
+    text-align: center;
+}
+.card-body{
+    background-color: #ed254e;
+     color: #f4fffd;
+}
