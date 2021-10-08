@@ -1,0 +1,131 @@
+:root{
+    --dark: #011936;
+    --grey: #465362;
+    --red: #ed254e;
+    --yellow: #f9dc5c;
+    --white: #f4fffd;
+
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    width: 100%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+}
+
+.bg-light{
+    background-color: var(--white) !important;
+
+}
+
+.bg-dark{
+    background-color: var(--dark) !important;
+    background: linear-gradient(to right, var(--grey), var(--dark))
+}
+
+.bg-warning, .btn-primary{
+    background-color: var(--yellow) !important;
+    color: var(--grey);
+    border-color:  var(--yellow);
+}
+
+.bg-danger{
+    background-color: var(--red) !important;
+}
+
+
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    background-color: var(--dark);
+    color: var(--white);
+    
+}
+
+.user_card{
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 200px;
+}
+.btn-primary:hover{
+    border-radius: none;
+}
+.card-body{
+ text-align: center;
+ padding: auto;   
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}   
+
+.container .card, .card-rol{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+
+
+.container .card:hover , .card-rol:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 300px;
+    height: 270px;
+    
+}
+
+.container .card-rol img{
+    width: 300px;
+    height: 270px;
+    
+}
+
+.container .card, .card-rol h4{
+    font-weight: 600;
+}
+
+.container .card, .card-rol p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card, .card-rol a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db
+}
+
+.navbar-nav{
+font-size: 80;
+}
+
+.navbar-navbar-expand-lg  {
+    
+    font-size: 80;
+    background-color: #011936;
+}
