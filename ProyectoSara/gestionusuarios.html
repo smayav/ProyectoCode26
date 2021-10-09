@@ -9,18 +9,7 @@
     <!--link de Boostrap V5-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!--link de JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
-        <script type="javascript" src="js/gestionusuarios.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
-        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
-        crossorigin="anonymous"></script>
     <!--Link de Style.css-->
     <link rel="stylesheet" type="text/css" href="css/gestionusuarios.css">
     <!--google fonts-->
@@ -30,105 +19,82 @@
     <title>Gestión de Usuarios/Roles</title>
 </head>
 
-<body>
+<body class="bg-dark">
        <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-            <!-- Toggle button -->
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-    
-            <!-- Collapsible wrapper -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Navbar brand -->
-                <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                    <img src="img/logo.png" height="55" alt="logo" loading="lazy" />
-                </a>
-                <!-- Left links -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ventas</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Admin
-                           
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="usuarios.html">Usuarios</a>
-                            <a class="dropdown-item" href="roles.html">Roles</a>
-                        </div>
-                    </li>
-                </ul>
-                <!-- Left links -->
-            </div>
-            <!-- Collapsible wrapper -->
-    
-            <!-- Right elements -->
-            <div class="d-flex align-items-center">
-
-    
-                <!-- Avatar -->
-                <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuLink"
-                    role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                    <img src="img/usuarios.png" class="rounded-top" height="25" alt="perfil de usuario" loading="lazy" />
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                    <li>
-                        <a class="dropdown-item" href="#">My profile</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">Settings</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">Logout</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Right elements -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" height="55" alt="logo" loading="lazy" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ventas</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="gestionusuarios.html" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Admin
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="usuarios.html">Usuarios</a></li>
+                        <li><a class="dropdown-item" href="roles.html">Roles</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="gestionusuarios.html" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        User
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Salir</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <!-- Container wrapper -->
-    </nav>
+    </div>
+</nav>
     <!-- Fin Navbar -->
 
 
     <!-- Inicio titulo-->
 
-        <h1 class="title">Administración de Usuarios/Roles</h1>
+        <h1 class="bg-warning text-center">Administración de Usuarios/Roles</h1>
 
     <!-- fin titulo-->
 
                 <!--card-->
 
-                <div class="container">
-                    <div class="card ">
-                        <img src="img/usuarios.png" class="card-img-top" alt="usuarios">
-                        <h5 class="card-title">Usuarios</h5>
-                        <p class="card-text">En este modulo puedes consultar y gestionar los usuarios</p>
-                        <a href="usuarios.html">Ingresar</a>
+                <div class="container ">
+                    <div class="card bg-light">
+                        <img src="img/usuarios.png" class="card-img-top p-2" alt="usuarios">
+                        <h5 class="card-title p-1">Usuarios</h5>
+                            <p class="card-text">En este modulo puedes consultar y gestionar los usuarios</p>
+                            <a  href="usuarios.html">Ingresar</a>
                     </div>
 
-                    <div class="card">
-                        <img src="img/rol.png" class="card-img-top" alt="roles">
-                        <h5 class="card-title">Roles</h5>
+                    <div class="card bg-light">
+                        <img src="img/rol.png" class="card-img-top p-2" alt="roles">
+                        <h5 class="card-title p-1">Roles</h5>
                         <p class="card-text">En este modulo puedes consultar y gestionar los roles de usuario</p>
                         <a href="roles.html">Ingresar</a>
                     </div>
 
                 </div>
 
-
-                
+    <!--link de JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
             
    
 </body>

@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--link de Boostrap V5-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!--link de Boostrap V5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-        <!--Link de Style.css-->
-        <link rel="stylesheet" type="text/css" href="css/gestionusuarios.css">
-        <!--<link rel="stylesheet" type="text/css" href="css/roles.css">-->
-        <!--google fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>Roles</title>
+    <!--Link de Style.css-->
+    <link rel="stylesheet" type="text/css" href="css/gestionusuarios.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Usuarios</title>
 </head>
-<body class="bg-dark">
+
+<body class="bg-light">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -62,49 +64,69 @@
         </div>
     </nav>
     <!-- Fin Navbar -->
-        
-        
-        <!-- Inicio titulo-->
-        <div class="header">
-            <h1 class="title">Gestión de Roles
-                <a class="btn btn-primary" role="button" href="gestionusuarios.html">Regresar</a>
-            </h1>
-        
+
+
+    <!-- Inicio titulo-->
+    <div class="header">
+        <h1 class="title">Editar Usuario
+            <a class="btn btn-primary" role="button" href="usuarios.html">Regresar</a>
+        </h1>
+
+    </div>
+
+
+    <!-- fin titulo-->
+
+    <!-- formulario-->
+    <form class="row g-4 needs-validation" novalidate>
+        <div class="col-md-4 position-relative">
+            <label for="validationTooltip01" class="form-label">Nombres</label>
+            <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+            <div class="valid-tooltip">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-4 position-relative">
+            <label for="validationTooltip02" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+            <div class="valid-tooltip">
+                Looks good!
+            </div>
+        </div>
+
+        <div class="col-md-4 position-relative">
+            <label for="validationTooltip04" class="form-label">Rol</label>
+            <select class="form-select" id="validationTooltip04" required>
+                <option selected disabled value="">Usuario</option>
+                <option>Vendedor</option><option>Administrador</option>
+            </select>
+            <div class="invalid-tooltip">
+                Please select a valid state.
+            </div>
+        </div>
+        <div class="col-md-4 position-relative">
+            <label for="validationTooltip04" class="form-label">Estado</label>
+            <select class="form-select" id="validationTooltip04" required>
+                <option selected disabled value="">Pediente</option>
+                <option>Autorizado</option><option>No Autorizado</option>
+            </select>
+            <div class="invalid-tooltip">
+                Please select a valid state.
+            </div>
         </div>
         
-       
-        <!-- fin titulo-->
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Editar</button>
+        </div>
+    </form>
 
-                <!--card-->
-                
-                <div class="container">
-                    <div class="card-rol bg-light">
-                        <img src="img/usuarios.png" class="card-img-top p-2"" alt="usuarios">
-                        <h5 class="card-title">Usuario<br></h5>
-                        <p class="card-text">Estado inicial, no cuenta con permisos<br><br> </p>
-                        <a href="#">Editar</a>
-                    </div>
-                
-                    <div class="card-rol bg-light">
-                        <img src="img/admon.png" class="card-img-top p-2"" alt="admin">
-                        <h5 class="card-title">Administrador</h5>
-                        <p class="card-text">Cuenta con permisos en los módulos de administración de usuarios, ventas y productos</p>
-                        <a href="#">Editar</a>
-                    </div>
-
-                    <div class="card-rol bg-light">
-                        <img src="img/vendedor.png" class="card-img-top p-2"" alt="vendedor">
-                        <h5 class="card-title">Vendedor</h5>
-                        <p class="card-text">Cuenta con permisos en los módulos de ventas<br><br></p>
-                        <a href="#">Editar</a>
-                    </div>
-                
-                </div>
+    
 
     <!--link de JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
         crossorigin="anonymous"></script>
-    
+
 </body>
+
 </html>

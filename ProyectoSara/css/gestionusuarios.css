@@ -37,11 +37,14 @@ body{
     border-color:  var(--yellow);
 }
 
-.bg-danger{
-    background-color: var(--red) !important;
+.btn-primary{
+    display: block;
 }
 
 
+.bg-danger{
+    background-color: var(--red) !important;
+}
 
 .title{
     text-align: center;
@@ -51,16 +54,10 @@ body{
     
 }
 
-.user_card{
-    margin: auto;
-    width: 100%;
-    max-width: 1200px;
-    height: 200px;
-}
 .btn-primary:hover{
     border-radius: none;
 }
-.card-body{
+.card{
  text-align: center;
  padding: auto;   
 }
@@ -72,24 +69,26 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+    
 }   
 
 .container .card, .card-rol{
     width: 300px;
-    height: 400px;
+    height: 450px;
     border-radius: 10px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px var(--grey);
     overflow: hidden;
     margin: 20px;
     text-align: center;
     transition: all 0.25s;
+    border-width: thick;
 }
 
 
 
-.container .card:hover , .card-rol:hover{
+.container .card:hover, .card-rol:hover{
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 16px var(--grey);
 }
 
 .container .card img{
@@ -101,31 +100,31 @@ body{
 .container .card-rol img{
     width: 300px;
     height: 270px;
-    
+
 }
 
-.container .card, .card-rol h4{
+.container .card h4, .card-rol h4{
     font-weight: 600;
 }
 
-.container .card, .card-rol p{
+.container .card p, .card-rol p{
     padding: 0 1rem;
     font-size: 16px;
     font-weight: 300;
 }
 
-.container .card, .card-rol a{
+.container .card a, .card-rol a{
     font-weight: 500;
     text-decoration: none;
-    color: #3498db
+    color: var(--red)
 }
 
 .navbar-nav{
 font-size: 80;
 }
 
-.navbar-navbar-expand-lg  {
-    
-    font-size: 80;
-    background-color: #011936;
+.nav-item-user{
+    float: right;
 }
+
+
