@@ -37,7 +37,7 @@ body{
     border-color:  var(--yellow);
 }
 
-.btn-warning{
+.btn-primary{
     display: block;
 }
 
@@ -78,7 +78,7 @@ body{
     width: 300px;
     height: 450px;
     border-radius: 10px;
-    box-shadow: 0 2px 2px var(--red);
+    box-shadow: 0 2px 2px var(--grey);
     overflow: hidden;
     margin: 20px;
     text-align: center;
@@ -118,11 +118,15 @@ body{
 .container .card a, .card-rol a{
     font-weight: 500;
     text-decoration: none;
-    color: var(--grey)
+    color: var(--red)
 }
 
 .navbar-nav{
 font-size: 80;
+}
+
+.nav-item-user{
+    float: right;
 }
 
 
