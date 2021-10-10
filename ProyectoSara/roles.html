@@ -32,10 +32,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Productos</a>
+                        <a class="nav-link" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ventas</a>
+                        <a class="nav-link" href="ventas.html">Ventas</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="gestionusuarios.html" id="navbarDropdownMenuLink"
@@ -82,29 +82,77 @@
                         <img src="img/usuarios.png" class="card-img-top p-2"" alt="usuarios">
                         <h5 class="card-title">Usuario<br></h5>
                         <p class="card-text">Estado inicial, no cuenta con permisos<br><br> </p>
-                        <a href="#">Editar</a>
+                        <a class="button-1 mt-2 mt-lg-0" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</a>
                     </div>
                 
                     <div class="card-rol bg-light">
                         <img src="img/admon.png" class="card-img-top p-2"" alt="admin">
                         <h5 class="card-title">Administrador</h5>
                         <p class="card-text">Cuenta con permisos en los módulos de administración de usuarios, ventas y productos</p>
-                        <a href="#">Editar</a>
+                        <a class="button-1 mt-2 mt-lg-0" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</a>
                     </div>
 
                     <div class="card-rol bg-light">
                         <img src="img/vendedor.png" class="card-img-top p-2"" alt="vendedor">
                         <h5 class="card-title">Vendedor</h5>
                         <p class="card-text">Cuenta con permisos en los módulos de ventas<br><br></p>
-                        <a href="#">Editar</a>
+                        <a class="button-1 mt-2 mt-lg-0" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</a>
                     </div>
                 
                 </div>
-
+        
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Editar Permisos</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- check-->
+                
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Modulo Inicio
+                                </label>
+                            </div>
+                
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Modulo Ventas
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Modulo Productos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Modulo Administración de usuarios y roles
+                                </label>
+                            </div>
+                
+                
+                            </div>
+                            <div class="modal-footer" id="liveAlertPlaceholder">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="liveAlertBtn">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Modal -->
     <!--link de JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
         crossorigin="anonymous"></script>
+        <script src="js/urbanmode.js"></script>
     
 </body>
 </html>

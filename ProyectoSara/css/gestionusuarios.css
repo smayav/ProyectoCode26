@@ -6,6 +6,9 @@
     --white: #f4fffd;
 
 }
+.borrar{
+    color:#f4fffd
+}
 
 html, body{
     margin: 0;
@@ -41,6 +44,9 @@ body{
     display: block;
 }
 
+#liveAlertBtn{
+    background-color: var(--yellow) !important;
+}
 
 .bg-danger{
     background-color: var(--red) !important;
