@@ -32,10 +32,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Productos</a>
+                        <a class="nav-link" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ventas</a>
+                        <a class="nav-link" href="ventas.html">Ventas</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="gestionusuarios.html" id="navbarDropdownMenuLink"
@@ -94,7 +94,7 @@
                     <td>Usuario</td>
                     <td>Pediente</td>
                     <td>
-                        <a class="button-1 mt-2 mt-lg-0" role="button" href="editaruser.html">
+                        <a class="button-1 mt-2 mt-lg-0" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="img/editar.png" height="33" alt="editar" />
                         <a class="button-1 mt-2 mt-lg-0" role="button" href="#">
                             <img src="img/eliminar.png" height="28" alt="eliminar" />
@@ -106,7 +106,7 @@
                     <td>Vendedor</td>
                     <td>No autorizado</td>
                     <td>
-                        <a class="button-1 mt-2 mt-lg-0" role="button" href="editaruser.html">
+                        <a class="button-1 mt-2 mt-lg-0" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="img/editar.png" height="33" alt="editar" />
                             <a class="button-1 mt-2 mt-lg-0" role="button" href="#">
                                 <img src="img/eliminar.png" height="28" alt="eliminar" />
@@ -119,7 +119,7 @@
                     <td>Administrador</td>
                     <td>Autorizado</td>
                     <td>
-                        <a class="button-1 mt-2 mt-lg-0" role="button" href="editaruser.html">
+                        <a class="button-1 mt-2 mt-lg-0" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="img/editar.png" height="33" alt="editar" />
                             <a class="button-1 mt-2 mt-lg-0" role="button" href="#">
                                 <img src="img/eliminar.png" height="28" alt="eliminar" />
@@ -128,10 +128,71 @@
             </tbody>
         </table>
 
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Editar Usuario</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- formulario-->
+                        
+                        
+                        
+                        <form class="row g-4 needs-validation" novalidate>
+                            <div class="col-md-4 position-relative">
+                                <label for="validationTooltip01" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                            </div>
+
+
+                        
+                            <div class="col-md-4 position-relative">
+                                <label for="validationTooltip04" class="form-label">Rol</label>
+                                <select class="form-select" id="validationTooltip04" required>
+                                    <option selected disabled value="">Usuario</option>
+                                    <option>Vendedor</option>
+                                    <option>Administrador</option>
+                                </select>
+                                <div class="invalid-tooltip">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-4 position-relative">
+                                <label for="validationTooltip04" class="form-label">Estado</label>
+                                <select class="form-select" id="validationTooltip04" required>
+                                    <option selected disabled value="">Pediente</option>
+                                    <option>Autorizado</option>
+                                    <option>No Autorizado</option>
+                                </select>
+                                <div class="invalid-tooltip">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                        </form><br>
+                        
+                        
+                    </div>
+                    <div class="modal-footer" id="liveAlertPlaceholder">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="liveAlertBtn">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Modal -->
+
             <!--link de JS-->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
                 crossorigin="anonymous"></script>
+            <script src="js/urbanmode.js"></script>
 
 </body>
 </html>
