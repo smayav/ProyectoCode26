@@ -1,9 +1,10 @@
 :root{
-    --dark: #011936;
-    --grey: #465362;
-    --red: #ed254e;
-    --yellow: #f9dc5c;
-    --white: #f4fffd;
+    --dark: #120903;
+    --orange: #f78537;
+    --orange-2: #ffbf69;
+    --cyan: #cbf3f0;
+    --blue: #2ec4b6;
+    --white: #ffffff;
 
 }
 
@@ -29,13 +30,13 @@ body{
 
 .bg-dark{
     background-color: var(--dark) !important;
-    background: linear-gradient(to right, var(--grey), var(--dark))
+    
 }
 
 .bg-warning, .btn-primary{
-    background-color: var(--yellow) !important;
-    color: var(--grey);
-    border-color:  var(--yellow);
+    background-color: var(--blue) !important;
+    color: var(--white);
+    border-color:  var(--orange);
 }
 
 .btn-primary{
@@ -43,11 +44,13 @@ body{
 }
 
 #liveAlertBtn{
-    background-color: var(--yellow) !important;
+    background-color: var(--orange-2) !important;
 }
 
-.bg-danger{
-    background-color: var(--red) !important;
+.bg-danger, .btn-danger{
+    background-color: var(--orange-2) !important;
+
+    border-color:  var(--orange);
 }
 
 .title{
@@ -81,7 +84,7 @@ body{
     width: 300px;
     height: 450px;
     border-radius: 10px;
-    box-shadow: 0 2px 2px var(--grey);
+    box-shadow: 0 2px 2px var(--cyan);
     overflow: hidden;
     margin: 20px;
     text-align: center;
@@ -93,7 +96,7 @@ body{
 
 .container .card:hover, .card-rol:hover{
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px var(--grey);
+    box-shadow: 0 12px 16px var(--cyan);
 }
 
 .container .card img{
@@ -121,7 +124,7 @@ body{
 .container .card a, .card-rol a{
     font-weight: 500;
     text-decoration: none;
-    color: var(--red)
+    color: var(--orange)
 }
 
 .navbar-nav{
